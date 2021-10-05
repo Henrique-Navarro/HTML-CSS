@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(26, 26, 26);
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.centralizar{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 504px;
+    height: 50px;
+}
+
+.centro{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: blue;
+    width: 550px;
+    height: 1px;
+    margin-top: 80px;
+}
+
+.seta{
+    position: relative;
+    margin-left: 635px;
+    margin-top: 420px;
+}

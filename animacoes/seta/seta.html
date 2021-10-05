@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seta->loca</title>
+
+    <style>
+        :root {
+            --cor-escura: rgb(36, 19, 109);
+            --hue-rotate: 0deg;
+        }
+
+        body {
+            background-color: #222324;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #claros {
+            filter: hue-rotate(var(--hue-rotate));
+        }
+
+        #escuros {
+            fill: var(--cor-escura);
+            filter: hue-rotate(var(--hue-rotate));
+        }
+
+        #claro,
+        #escuro,
+        #escuror {
+            transition: all 1s ease;
+        }
+
+        #escuror {
+            transform-origin: center;
+            transform: translateX(-100px) scale(0.5);
+            opacity: 0;
+        }
+
+        #escuro {
+            transform-origin: center;
+            opacity: 0.7;
+        }
+
+        svg:hover #claro {
+            transform: translateX(50px);
+        }
+
+        svg:hover #escuror {
+            transform: translateX(0px) scale(1);
+            opacity: 0.7;
+        }
+
+        svg:hover #escuro {
+            opacity: 0;
+            transform: translateX(100px) scale(0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="1400" height="400" viewBox="0 0 350 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="triangulos" clip-path="url(#clip0)">
+            <g id="escuros">
+                <path id="escuror" opacity="0.7"
+                    d="M189.5 43.9378C194.167 46.6321 194.167 53.3679 189.5 56.0622L135.5 87.2391C130.833 89.9334 125 86.5655 125 81.1769V18.8231C125 13.4345 130.833 10.0666 135.5 12.7609L189.5 43.9378Z" />
+                <path id="escuro" opacity="0.7"
+                    d="M239.5 43.9378C244.167 46.6321 244.167 53.3679 239.5 56.0622L185.5 87.2391C180.833 89.9334 175 86.5655 175 81.1769V18.8231C175 13.4345 180.833 10.0666 185.5 12.7609L239.5 43.9378Z" />
+            </g>
+            <g id="claros">
+                <path id="claro" opacity="0.7" fill="url(#grad1)"
+                    d="M189.5 43.9378C194.167 46.6321 194.167 53.3679 189.5 56.0622L135.5 87.2391C130.833 89.9334 125 86.5655 125 81.1769V18.8231C125 13.4345 130.833 10.0666 135.5 12.7609L189.5 43.9378Z" />
+            </g>
+        </g>
+        <defs>
+            <clipPath id="clip0">
+                <rect width="350" height="100" fill="white" />
+            </clipPath>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(130, 110, 221);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(221, 110, 153);stop-opacity:1" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+
+    <script>
+        const svg = document.getElementById("triangulos");
+
+        svg.onclick = (e) => {
+            document.documentElement.style.cssText = `
+            --hue-rotate: ${Math.random() * 360}deg;`
+        }
+    </script>
+</body>
+
+</html>

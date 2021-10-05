@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGENS</title>
+</head>
+
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu
+        navegador</p>
+    <picture>
+        <source media="(max-width: 700px)" srcset="imagens/p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/m.png" type="image/png">
+        <img src="imagens/g.png" alt="Imagem Flexível">
+    </picture>
+
+    <h1>Reproduzir audio</h1>
+    <audio src="midia/musica.mpeg" controls autoplay></audio>
+
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/musica.mpeg" type="audio/mpeg">
+    </audio>
+</body>
+
+</html>
