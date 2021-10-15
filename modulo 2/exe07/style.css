@@ -1,0 +1,44 @@
+@charset "UTF-8";
+/*
+    em HTML -> id em CSS -> #
+    em HTML -> class em CSS -> .
+*/
+body{
+    background-color: #191919;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1{
+    color: rgb(240, 30, 30);
+}
+
+h1#principal{
+    color: #191919;
+    background-color: rgb(240, 30, 30);
+    text-align: center;
+}
+
+h2{
+    color: #fd4c4c;
+}
+
+p{
+    color: white;
+}
+
+.aprendendo{
+    color: rgb(42, 42, 253);
+}
+
+.basico{
+    color: rgb(5, 104, 5);
+}
+
+.intermediario{
+    color: rgb(255, 255, 36);
+}
+
+.avancado{
+    color: rgb(238, 1, 1);
+}
