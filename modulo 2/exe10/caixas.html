@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Grouping tags</title>
+
+    <style>
+        body {
+            background-color: rgb(153, 152, 152);
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 30px 10px 0px 10px;
+            border-radius: 20px;
+        }
+
+        nav {
+            background-color: rgb(94, 94, 250);
+            padding: 3px;
+            margin: 3px;
+
+            /*x y blur espalhar*/
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.479);
+            border-radius: 20px;
+            width: 215px;
+        }
+
+        nav>a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px 10px;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: aqua;
+            padding: 3px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        aside {
+            background-color: rgb(165, 118, 60);
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            padding: 2px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1px;
+            margin: 0px;
+            text-align: center;
+        }
+
+        div#bola {
+            height: 150px;
+            width: 150px;
+            margin: 30px auto;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header - main - footer são divs já com id-->
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">Link1</a> <a href="">Link2</a> <a href="">Link3</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Notícias do dia Brasil</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis perferendis molestias iusto minima.
+                Numquam
+                blanditiis consequatur reprehenderit officiis soluta! Possimus beatae esse commodi doloribus excepturi
+                incidunt sed saepe quod rem.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis perferendis
+                molestias iusto minima.
+                Numquam
+                blanditiis consequatur reprehenderit officiis soluta! Possimus beatae esse commodi doloribus excepturi
+                incidunt sed saepe quod rem.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis perferendis
+                molestias iusto minima.
+                Numquam
+                blanditiis consequatur reprehenderit officiis soluta! Possimus beatae esse commodi doloribus excepturi
+                incidunt sed saepe quod rem.</p>
+            <aside>Escrito por jose loco</aside>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Euriq</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+
+</html>
