@@ -5,21 +5,38 @@
 
 header{
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: gray;
 }
 
-#barra{
-    width: 70px;
-    height: 600px;
-    background-color: gray;
+a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 20px 5px;
+    text-align: center;
 }
+
+
+
+#imgCasinha{
+    width: 70px;
+    height: 70px;
+}
+
+#imgTracinho{
+    width: 70px;
+    height: 70px;
+}
+
+
 
 #login{
     width: 400px;
     height: 100px;
     background-color: blue;
     text-align: right;
+    margin: 100px auto;
 }
 
 #cadastro{
@@ -37,18 +54,10 @@ header{
     margin: auto;
 }
 
-#casinha{
-    width: 70px;
-    height: 70px;
-    margin-left: 300px;
-}
-
-#tracinho{
-    width: 70px;
-    height: 70px;
-}
-
-a{
-    text-decoration: none;
-    color: black;
+#sobre{
+    width: 400px;
+    height: 100%;
+    margin: 100px auto;
+    background-color: blue;
+    text-align: center;
 }

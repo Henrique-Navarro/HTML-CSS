@@ -8,16 +8,25 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="barra.css">
 </head>
 
 <body>
-    <header>
-        <img id="tracinho" src="imagens/tacinho.png" alt="">
-        <a href="index.html">
-            <img id="casinha" src="imagens/home.png" alt="">
-        </a>
-    </header>
+    <header></header>
+    <input type="checkbox" id="check">
+    <label for="check" id="imagem">
+        <img id="imgTracinho" src="imagens/tacinho.png" alt="">
+    </label>
 
+    <div id="barraLateral">
+        <ul>
+            <li><a href="index.html" class="barra">Principal</a></li>
+            <li><a href="index.html" class="barra">Filmes</a></li>
+            <li><a href="index.html" class="barra">Trailers</a></li>
+            <li><a href="index.html" class="barra">Trilha Sonora</a></li>
+            <li><a href="index.html" class="barra">Sobre</a></li>
+        </ul>
+    </div>
     <div id="cadastro">
         <br>
         <label for="">Nome:
@@ -83,6 +92,7 @@
         <br><br>
         <input type="submit" name="enviar" value="Enviar">
         <input type="reset" name="reset" value="Limpar">
+        <a href="index.html">Voltar</a>
     </div>
 </body>
 
