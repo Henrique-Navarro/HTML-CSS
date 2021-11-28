@@ -157,7 +157,8 @@ h1{
 
 
 .alinhar{
-    text-align: center;    
+    text-align: center;
+    margin-top: 20px;   
 }
 
 .lnk-filmes{
@@ -295,4 +296,29 @@ footer{
     background-color: #414046;
     text-align: center;
     padding: 10px;
+}
+
+.imagem{
+    width: 300p;
+    height: 150px;
+    margin: 0px 600px;
+}
+
+.arr{
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+}
+
+#contato{
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 3px;
+    margin: 0px auto 30px auto;
+    background-color: #414046;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    color: white;
 }
