@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .pai {
+            width: 500px;
+            background-color: red;
+            padding: 20px 0px;
+            margin: 0px auto;
+            margin: 20px auto;
+        }
+
+        .filho {
+            /*display: inline-block;
+            margin-right: -4px;*/
+
+            float: left;
+
+            width: 250px;
+            background-color: blue;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .filho2 {
+            float: right;
+            width: 250px;
+            background-color: blue;
+            height: 200px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pai">
+        <div class="filho"></div>
+        <div class="filho"></div>
+        <div class="filho"></div>
+        <div style="clear:both;"></div>
+    </div>
+
+    <div class="pai">
+        <div class="filho2"></div>
+        <div class="filho2"></div>
+        <div class="filho2"></div>
+        <div style="clear:both;"></div>
+    </div>
+</body>
+
+</html>
