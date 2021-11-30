@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /*ataca todos os a que tem esse href*/
+        a[href="http://www.google.com"] {
+            background-color: red;
+        }
+
+        /*procura dentro dos atributos, algum 'goo'
+        procura em qualquer lugar*/
+        a[attr *="goo"] {
+            background-color: blue;
+        }
+
+        /*procure dentro da tag a, o atributo 'google'
+        procura entre os espaços*/
+        a[attr~="google"] {
+            background-color: red;
+        }
+
+        /*quando começar com a palavra 'google'*/
+        a[attr|="google"] {
+            background-color: blue;
+        }
+
+        /*quando começar com a palavra*/
+        a[attr^="goo"] {
+            background-color: red;
+        }
+
+        /*quando terminar com a palavra*/
+        a[attr$="google"] {
+            background-color: blue;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <a href="http://www.google.com">link1</a>
+    <a attr="google danki yahoo">link2</a>
+    <a href="">link3</a>
+    <a href="">link4</a>
+</body>
+
+</html>
