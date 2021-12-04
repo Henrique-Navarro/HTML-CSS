@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+            width: 96%;
+            max-width: 600px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        form fieldset {
+            padding: 50px 0px;
+        }
+
+        form legend {
+            text-align: center;
+        }
+
+        form input[type=text] {
+            display: inline-block;
+            margin-top: 30px;
+            width: 80%;
+            padding: 10px 12px;
+            border: 0.4px solid black;
+        }
+
+        form input[type=text]:focus,
+        form select:focus {
+            outline: 0;
+        }
+
+        form select {
+            display: inline-block;
+            margin-top: 30px;
+            width: calc(80% + 24px);
+            padding: 10px 12px;
+            border: 1px solid black;
+        }
+
+        form h2 {
+            margin-top: 30px;
+        }
+
+        form input[type=radio] {
+            color: blue;
+        }
+
+        form .input {
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        form select option[disabled] {
+            color: red;
+        }
+
+        form input[type=submit] {
+            padding: 9px 15px;
+            margin-top: 40px;
+            border: 1px solid black;
+            background-color: gray;
+            border-radius: 5px;
+            color: yellow;
+            cursor: pointer;
+        }
+
+        form textarea {
+            padding: 9px 15px;
+            border: 1px solid black;
+            margin-top: 30px;
+            resize: none;
+            width: 80%;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Formulário loco</legend>
+            <div><input type="text" name="nome" placeholder="Digite seu nome:"></div>
+            <div><input type="text" name="nome" placeholder="Digite seu nome:"></div>
+            <div>
+                <select name="lista">
+                    <option disabled selected>Qual sua idade</option>
+                    <option>3-10</option>
+                    <option>10-15</option>
+                    <option>15-18</option>
+                    <option>18+</option>
+                </select>
+            </div>
+
+            <h2>Qual sua cidade?</h2>
+            <div class="input">
+                <div>
+                    <input type="radio" name="cidade"><span>Florianópolis</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade"><span>Poços de Caldas</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade"><span>São Paulo</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade"><span>Goiania</span>
+                </div>
+                <div>
+                    <input type="radio" name="cidade"><span>Ubatuba</span>
+                </div>
+            </div>
+
+            <h2>Oque você gosta de comer?</h2>
+            <div class="input">
+                <div>
+                    <input type="checkbox" name="comida"><span>Açaí</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="comida"><span>Fruta</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="comida"><span>Carne</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="comida"><span>Doce</span>
+                </div>
+                <div>
+                    <input type="checkbox" name="comida"><span>Salgado</span>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <textarea></textarea>
+                </div>
+            </div>
+
+            <div>
+                <input type="submit" name="acao" value="enviar">
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
