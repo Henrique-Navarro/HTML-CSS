@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+#menu{
+    width: 100%;
+    list-style: none;
+    text-align: right;
+}
+
+#menu ul li{
+    display: inline;
+    padding: 2px 20px;
+}
+
+ul{
+    margin-top: 40px;
+    margin-right: 40px;
+}
