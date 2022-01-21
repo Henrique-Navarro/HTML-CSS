@@ -1,0 +1,21 @@
+div#menu>ul{
+    list-style:nome;
+    background-color: #dddddd;
+    overflow: hidden;
+}
+  
+div#menu>ul>li{
+    display:inline;
+    float:left;
+}
+  
+div#menu>ul>li>a{
+    display:block;
+    padding:20px;
+    background-color: #dddddd;
+}
+  
+div#menu>ul>li a:hover{
+    background-color:gray;
+    color: white;
+}
