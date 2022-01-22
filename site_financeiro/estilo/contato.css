@@ -1,0 +1,37 @@
+main{
+    margin: 10% auto;
+    width: 50%;
+    height: 50%;
+    padding: 30px;
+    background-color: #dddddd;
+    border-radius: 15px 0px 15px 0px;
+    text-align: center;
+}
+
+main:hover{
+    background-color: gray;
+    color: white;
+}
+
+main:hover div#ligar{
+    background-color: #dddddd;
+    color: black;
+}
+
+main:hover a{
+    background-color: #dddddd;
+    color: black;
+}
+
+div#ligar{
+    padding: 5px;
+    margin: 20% 0 0 0;
+    color:white;
+    background-color: gray;
+}
+
+a{
+    text-decoration: none;
+    background-color: gray;
+    color:white
+}
