@@ -37,17 +37,21 @@ div#botao{
     width:80px;
     height: auto;
     color:black;
-    padding:6px;
+    padding:10px 15px;
+    margin: auto;
     box-shadow: 2px 2px black;
-    position: fixed;
-    top:14%;
-    left:47%;
+    border-radius: 5px 0px;
 }
 
 div#botao:hover{
     background-color: gray;
     color: white;
     box-shadow: 2px 2px white;
+}
+
+div#botao:hover>a{
+    background-color: gray;
+    color: white;
 }
 
 div#box1, div#box2, div#box3{
@@ -58,6 +62,7 @@ div#box1, div#box2, div#box3{
     margin: 2% 3.9%;
     padding: 2% 0px 2% 0px;
     box-shadow: 2px 2px black;
+    border-radius: 5px 0px;
 }
   
 div#box1:hover, div#box2:hover, div#box3:hover{
