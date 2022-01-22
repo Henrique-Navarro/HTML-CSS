@@ -29,3 +29,18 @@ div#menu>ul>li a:hover{
     background-color:gray;
     color: white;
 }
+
+footer{
+    position: fixed;
+    top:97%;
+    text-align: center;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    letter-spacing: 3px;
+}
+
+div.nomes{
+    display: inline;
+    background-color: gray;
+}

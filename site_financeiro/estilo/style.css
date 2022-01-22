@@ -19,11 +19,9 @@ div#icone{
     background-color:#dddddd;
     width:130px;
     position: fixed;
-    top:14%;
-    left:8%;
-    color:black;
+    top:1%;
+    left:88%;
     padding:3px;
-    box-shadow: 2px 2px black;
     text-align: center;
     padding:6px;
 }
@@ -31,7 +29,6 @@ div#icone{
 div#icone:hover{
     background-color: gray;
     color: white;
-    box-shadow: 2px 2px white;
 }
 
 div#botao{
@@ -44,7 +41,7 @@ div#botao{
     box-shadow: 2px 2px black;
     position: fixed;
     top:14%;
-    left:85%;
+    left:47%;
 }
 
 div#botao:hover{
@@ -101,19 +98,4 @@ tr#titulo{
 th:hover, td:hover{
     background-color: gray;
     color:white
-}
-
-footer{
-    position: fixed;
-    top:97%;
-    text-align: center;
-    width: 100%;
-    background-color: gray;
-    color: white;
-    letter-spacing: 3px;
-}
-
-div.nomes{
-    display: inline;
-    background-color: gray;
 }
