@@ -1,0 +1,44 @@
+1- pagina principal
+    logo/icones
+
+2- icone lupa
+
+3- logo empresa
+
+4- 
+
+5- icone lapis/lixeira
+
+6- pagina transação (pop-up)
+
+    7- combobox (5 categoria)
+
+    8- título, valor, opção, tipo (forms)
+
+9- hover aparece icone lupa
+
+10- pagina sobre (foto, nome, email, telefone, IF, curso, RA)
+
+Cadastro
+    11- pagina contato (form -> nome, email, telefone, assunto, mensagem)
+    botão enviar limpar
+    
+    12- informar campo não preenchido
+        informar valor incorreto
+        try-catchs para validar informações
+
+    13- alert se cadastro não der certo
+        alert se cadatro der certo
+
+14- máscaras adequadas campo de texto e numéricas
+
+Login
+15- pagina de login(usuario, senha, link->cadastrar)
+    sistema de login
+    certo->pag inicial
+    errado->alerta
+
+Cadastro
+16- form(nome, email, usuario, senha)
+
+17- edição de usuários (mudar informações de cadastro)
