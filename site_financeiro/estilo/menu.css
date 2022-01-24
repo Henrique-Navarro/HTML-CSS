@@ -5,11 +5,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
-
 div#menu>ul{
     list-style:nome;
     background-color: #dddddd;
@@ -20,8 +15,8 @@ div#menu>ul>li{
     display:inline;
     float:left;
 }
-  
-div#menu>ul>li>a{
+
+li a, .dropbtn{
     display:block;
     padding:20px;
     background-color: #dddddd;
@@ -29,11 +24,29 @@ div#menu>ul>li>a{
     color:black;
 }
   
-div#menu>ul>li a:hover{
+li{
+    float:left;
+}
+
+div#menu>ul>li a:hover, .dropdown:hover .dropbtn{
     background-color:gray;
     color: white;
 }
 
+.conteudo-dropdown{
+    text-align:left;
+    display:none;
+    position:absolute;
+    z-index:1;
+    color:black;
+    box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown:hover .conteudo-dropdown{
+    display:block;
+}
+
+/**rodapé*/
 footer{
     position: fixed;
     top:97.2%;
