@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../estilo/menu.css">
+    <link rel="stylesheet" href="../estilo/cadastro.css">
 </head>
 
 <body>
@@ -27,6 +28,66 @@
                 </div>
             </li>
         </ul>
+    </div>
+
+    <div class="container">
+        <div class="linha">
+            <div class="coluna">
+                Nome:
+            </div>
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome">
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                Email:
+            </div>
+            <label for="email"></label>
+            <input type="text" name="email" id="email">
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                Senha:
+            </div>
+            <label for="senha"></label>
+            <input type="text" name="senha" id="senha">
+        </div>
+
+
+        <div class="linha">
+            <div class="coluna">
+                Telefone:
+            </div>
+            <label for="telefone"></label>
+            <input type="number" name="telefone" id="telefone">
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                Assunto:
+            </div>
+            <select name="assunto" id="assunto">
+                <option value="iniciante">iniciante</option>
+                <option value="intermediário">intermediário</option>
+                <option value="entusiasta">entusiasta</option>
+                <option value="avançado">avançado</option>
+                <option value="empresario">empresario</option>
+            </select>
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                Mensagem:
+            </div>
+            <div class="center"><textarea name="mensagem" id="mensagem"
+                    placeholder="Digite sua mensagem aqui.."></textarea></div>
+        </div>
+
+        <div class="botao">
+            <input type="button" value="enviar" onclick="enviarDados()">
+        </div>
     </div>
 </body>
 

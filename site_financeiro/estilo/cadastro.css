@@ -1,0 +1,73 @@
+div.container{
+    width:60%;
+    height:70%;
+    background-color:#DDDDDD;
+    margin:2% auto;
+    box-sizing: content-box;
+    padding: 1px;
+    margin-top: 6%;
+    border-radius: 4px;
+  }
+  
+  div.linha{
+    margin: 5% auto;
+    width:100%;
+    background-color: #DDDDDD;
+    height:50px;
+  }
+  
+  div.coluna{
+    text-align: right;
+    width:30%;
+    height:100%;
+    color:black;
+    background-color:#DDDDDD;
+    display:inline-block;
+  }
+  
+  input[type="text"], input[type="number"], #assunto{
+    width:40%;
+    height:75%;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 15px;
+  }
+  
+  input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+
+  input[type="button"]{
+    background-color:red;
+    border-radius:0px 0px 8px 8px;
+    padding:10px 4px;
+    border:none;
+    width:43%;
+    color:white;
+    margin: 8.5% auto 5% 0px;
+    text-align:center;
+  }
+  
+  input:focus{
+    box-shadow: none;
+    outline: 0;
+  }
+  
+  div.botao{
+    text-align:center;
+    background-color: #DDDDDD;
+  }
+
+.center  {
+    text-align: center;
+    background-color: #DDDDDD;
+}
+
+#mensagem{
+    resize: none;
+    width: 80%;
+    height: 80%;
+    padding: 6px;
+}

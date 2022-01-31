@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="../estilo/menu.css">
     <link rel="stylesheet" href="../estilo/login.css">
+
+    <script type="text/javascript" src="../javaScript/login.js"></script>
 </head>
 
 <body>
@@ -36,20 +38,23 @@
             <div class="coluna">
                 Nome:
             </div>
-            <label for=""></label>
-            <input type="text">
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome">
         </div>
 
         <div class="linha">
             <div class="coluna">
                 Senha:
             </div>
-            <label for=""></label>
-            <input type="text">
+            <label for="senha"></label>
+            <input type="password" name="senha" id="senha">
         </div>
 
         <div class="botao">
-            <input type="button" value="enviar">
+            <input type="button" value="enviar" onclick="enviarDados()">
+        </div>
+        <div class="botao">
+            <a href="cadastrar.html">cadastrar</a>
         </div>
     </div>
 </body>
