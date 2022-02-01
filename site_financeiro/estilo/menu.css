@@ -58,12 +58,12 @@ footer{
     top:97.2%;
     text-align: center;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(13, 13, 110);;
     color: white;
     letter-spacing: 3px;
 }
 
 div.nomes{
     display: inline;
-    background-color: gray;
+    background-color: rgb(13, 13, 110);;
 }

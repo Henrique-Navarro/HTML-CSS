@@ -8,10 +8,9 @@ function enviarDados() {
     let texto = document.getElementById("mensagem").value;
 
     //banco de dados artificial
-    const nomes = ['Henrique', 'Joao', 'Mariana', 'Julia', 'Gustavo']
-    for (let i = 0; i < length(nomes); i++) {
-        if (nome == nomes[i]) {
+    const nomes = ['Henrique', 'Joao', 'Mariana', 'Julia', 'Gustavo'];
+}
 
-        }
-    }
+function mostrar() {
+    document.getElementById("mostrarDados").innerHTML = `Seu nome: ${nome}\nSeu email: ${email}\nSua senha: ${senha}\nSeu telefone: ${telefone}\n`
 }

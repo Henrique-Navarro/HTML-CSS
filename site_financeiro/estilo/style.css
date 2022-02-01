@@ -3,14 +3,14 @@
 }
 
 header{
-    background-color: #5429CC;
+    background-color: rgb(13, 13, 110);;
     width: 100%;
     height: 30%;
     display: inline-block;
 }
 
 div#logo{
-    background-color: #5429CC;
+    background-color: rgb(13, 13, 110);;
     padding: 15px;
     margin: 35px 0px;
 }

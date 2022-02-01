@@ -1,14 +1,60 @@
 main{
-    margin: 10% auto;
-    width: 50%;
-    height: 50%;
-    padding: 30px;
-    background-color: #dddddd;
-    border-radius: 15px 0px 15px 0px;
-    text-align: center;
+    width: 83%;
+    height: 80px;
+    margin: 5% auto 0 auto;
 }
 
-main:hover{
-    background-color: gray;
+.nome{
+    text-align: center;
+    background-color: rgb(13, 13, 110);
+    border-radius: 60px 0px 0px 0px;
+    width: auto;
+    padding: 5px 0 5px 0;
+    font-size: 20px;
+    color: white;
+}
+
+.conteudo-jooj, .conteudo-henrique{
+    display: inline-block;
+    margin: 0;
+    background-color: #dddddd;
+    width: 37%;
+    border-radius: 40px 0px 40px 0px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.conteudo-jooj{
+    margin-left: 25%;
+}
+
+.foto-henrique{
+    background-image: url(../imagens/henrique.png);
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    margin: 15px auto 15px auto;
+}
+
+.foto-jooj{
+    background-image: url(../imagens/PicsArt_12-24-09.10.26.jpg);
+    width: 170px;
+    height: 170px;
+    background-size: contain;
+    margin: 15px auto 15px auto;
+}
+
+.email, .telefone, .if, .curso, .periodo, .ra{
+    width: 62%;
+    height: auto;
+    background-color: #dddddd;;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    margin: 5px auto;
+    border-radius: 20px 0px 20px 0px;
+}
+
+.email:hover, .telefone:hover, .if:hover, .curso:hover, .periodo:hover, .ra:hover{
+    background-color: rgb(13, 13, 110);
     color: white;
 }
