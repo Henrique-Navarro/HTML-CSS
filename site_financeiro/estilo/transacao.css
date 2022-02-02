@@ -1,0 +1,53 @@
+*{
+    background-color: #dddddd;
+}
+
+main{
+    margin: 5% auto;
+    width: 60%;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 2%;
+    border-radius: 15px;
+}
+
+#conteudo{
+    margin: auto;
+    background-color: black;
+    width: 70%;
+    margin: auto;
+    height: 100%;
+}
+
+input[type="number"], input[type="text"]{
+    padding: 6px 0px 6px 0px;
+    margin: 5% auto;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.botaoOpcao{
+    width: 40%;
+    border: none;
+    background-color: rgb(13, 13, 110);
+    color: white;
+    margin: auto 3%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+#botaoEnviar{
+    display: block;
+    text-align: center;
+    margin: 5% auto;
+    width:100%;
+    padding: 5px;
+    border: none;
+}
+
+.botaoOpcao:focus{
+    background-color: red;
+    margin: 1px solid black;
+}

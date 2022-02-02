@@ -33,7 +33,7 @@ input[type="text"], input[type="password"]{
 }
 
 input[type="button"]{
-  background-color:rgb(13, 13, 110);;
+  background-color:rgb(13, 13, 110);
   border-radius:0px 0px 8px 8px;
   padding:10px 4px;
   border:none;
