@@ -8,7 +8,7 @@ function enviarDados() {
     let texto = document.getElementById("mensagem").value;
 
     //banco de dados artificial
-    const nomes = ['Henrique', 'Joao', 'Mariana', 'Julia', 'Gustavo', ''];
+    const nomes = ['Henrique', 'Joao', 'Mariana', 'Julia', 'Gustavo', 'Marcelo'];
 }
 
 function mostrar() {
