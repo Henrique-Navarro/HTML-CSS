@@ -54,7 +54,7 @@ input[type="number"], input[type="text"]{
     padding: 20px;
     border: none;
     background-color: rgb(13, 13, 110);
-    color: white;
+    color: black;
     border-radius: 4px;
 }
 
