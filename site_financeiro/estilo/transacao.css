@@ -28,7 +28,7 @@ main{
 input[type="number"], input[type="text"]{
     padding: 16px 0px 16px 0px;
     margin: 5% auto;
-    width: 10%;
+    width: 100%;
     background-color: white;
     border: 1px solid black;
     text-align: center;
