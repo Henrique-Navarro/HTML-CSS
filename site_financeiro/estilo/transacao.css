@@ -22,7 +22,7 @@ main{
     margin: auto;
     width: 70%;
     margin: auto;
-    height: 10%;
+    height: 100%;
 }
 
 input[type="number"], input[type="text"]{
