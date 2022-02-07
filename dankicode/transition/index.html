@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML CSS JS</title>
+    <style>
+        .caixa1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 1s;
+        }
+
+        .caixa1:hover {
+            width: 300px;
+        }
+
+        .caixa2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 3s, height 3s, transform 0.5s;
+        }
+
+        .caixa2:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+        }
+
+        .caixa3 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+
+            transition: width 2s linear 1s;
+            /*
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+  */
+        }
+
+        .caixa3:hover {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa1">
+
+    </div>
+
+    <div class="caixa2">
+
+    </div>
+
+    <div class="caixa3">
+
+    </div>
+</body>
+
+</html>
