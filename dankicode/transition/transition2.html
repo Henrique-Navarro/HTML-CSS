@@ -1,0 +1,59 @@
+!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML CSS JS</title>
+    <style>
+        div {
+            margin-top: 5px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            transition: width 2s;
+        }
+
+        div:hover {
+            width: 300px;
+        }
+
+        //normal
+        .caixa1 {
+            transition-timing-function: linear;
+        }
+
+        //acelera no meio
+        .caixa2 {
+            transition-timing-function: ease
+        }
+
+        //começa lento
+        .caixa3 {
+            transition-timing-function: ease-in;
+        }
+
+        //termina lento
+        .caixa4 {
+            transition-timing-function: ease-out;
+        }
+
+        //começa e termina lento
+        .caixa5 {
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="caixa1">linear</div>
+
+    <div class="caixa2">ease</div>
+
+    <div class="caixa3">ease-in</div>
+
+    <div class="caixa4">ease-out</div>
+
+    <div class="caixa5">ease-in-out</div>
+</body>
+
+</html>
