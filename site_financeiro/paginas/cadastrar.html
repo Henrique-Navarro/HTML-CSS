@@ -10,28 +10,37 @@
     <link rel="stylesheet" href="../estilo/menu.css">
     <link rel="stylesheet" href="../estilo/cadastro.css">
     <script src="../javaScript/cadastro.js"></script>
+
+    <script>
+        function pesquisar() {
+            prompt('Buscar:');
+        }
+    </script>
 </head>
 
 <body>
     <div id="menu">
         <ul>
             <!--Hover quando passar em buscar aparece uma lupa-->
-            <li><a>buscar</a></li>
+            <div id="lupa" onclick="pesquisar()"></div>
+            <input type="text" id="pesquisa" placeholder="buscar">
             <li><a href="index.html">principal</a></li>
             <li><a href="contato.html">contato</a></li>
             <li><a href="sobre.html">sobre</a></li>
             <li class="dropdown">
                 <p class="dropbtn">conta</p>
                 <div class="conteudo-dropdown">
-                    <a href="">editar</a>
+                    <a href="editar.html">editar</a>
                     <a href="login.html">login</a>
                     <a href="cadastrar.html">cadastrar</a>
                 </div>
             </li>
+            <div id="icone_imagem"></div>
         </ul>
     </div>
 
     <div class="container">
+        <h1>Cadastrar</h1>
         <div class="linha">
             <div class="coluna">
                 Nome:
@@ -50,46 +59,28 @@
 
         <div class="linha">
             <div class="coluna">
+                Usuario:
+            </div>
+            <label for="usuario"></label>
+            <input type="text" name="usuario" id="nome">
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
                 Senha:
             </div>
             <label for="senha"></label>
             <input type="text" name="senha" id="senha">
         </div>
 
-
-        <div class="linha">
-            <div class="coluna">
-                Telefone:
-            </div>
-            <label for="telefone"></label>
-            <input type="number" name="telefone" id="telefone">
-        </div>
-
-        <div class="linha">
-            <div class="coluna">
-                Assunto:
-            </div>
-            <select name="assunto" id="assunto">
-                <option value="iniciante">iniciante</option>
-                <option value="intermediário">intermediário</option>
-                <option value="entusiasta">entusiasta</option>
-                <option value="avançado">avançado</option>
-                <option value="empresario">empresario</option>
-            </select>
-        </div>
-
-        <div class="linha">
-            <div class="coluna">
-                Mensagem:
-            </div>
-            <div class="center"><textarea name="mensagem" id="mensagem"
-                    placeholder="Digite sua mensagem aqui.."></textarea></div>
-        </div>
-
         <div class="botao">
             <input type="button" value="enviar" onclick="enviarDados()">
         </div>
     </div>
+
+    <footer>
+        Feito por: <div class="nomes">Henrique Navarro Morais</div> e <div class="nomes">Joao Pedro Xavier</div>
+    </footer>
 </body>
 
 </html>

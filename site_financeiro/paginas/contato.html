@@ -9,24 +9,36 @@
 
     <link rel="stylesheet" href="../estilo/menu.css">
     <link rel="stylesheet" href="../estilo/contato.css">
+
+    <script>
+        function enviarDados() {
+           alert("Dados enviados com sucesso!");
+        }
+
+        function pesquisar() {
+            prompt('Buscar:');
+        }
+    </script>
 </head>
 
 <body>
     <div id="menu">
         <ul>
             <!--Hover quando passar em buscar aparece uma lupa-->
-            <li><a>buscar</a></li>
+            <div id="lupa" onclick="pesquisar()"></div>
+            <input type="text" id="pesquisa" placeholder="buscar">
             <li><a href="index.html">principal</a></li>
             <li><a href="contato.html">contato</a></li>
             <li><a href="sobre.html">sobre</a></li>
             <li class="dropdown">
                 <p class="dropbtn">conta</p>
                 <div class="conteudo-dropdown">
-                    <a href="">editar</a>
+                    <a href="editar.html">editar</a>
                     <a href="login.html">login</a>
                     <a href="cadastrar.html">cadastrar</a>
                 </div>
             </li>
+            <div id="icone_imagem"></div>
         </ul>
     </div>
 
@@ -34,16 +46,57 @@
         Nome, e-mail, telefone, assunto, mensagem
         enviar e limpar-->
     <!--!JavaScript para verificar os campos**-->
-    <main>
-        Para entrar em contato com a gente, acesse:
-        <br>
-        Telefone: (35) 1234-5678
-
-        <div id="ligar">
-            <a href="">Ligar</a>
+    <div class="container">
+        <h1>Entre em contato:</h1>
+        <div class="linha">
+            <div class="coluna">
+                Nome:
+            </div>
+            <label for="nome"></label>
+            <input type="text" name="nome" id="nome">
         </div>
-    </main>
 
+        <div class="linha">
+            <div class="coluna">
+                Email:
+            </div>
+            <label for="email"></label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="linha">
+            <div class="coluna">
+                Telefone:
+            </div>
+            <label for="telefone"></label>
+            <input type="number" name="telefone" id="telefone">
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                Assunto:
+            </div>
+            <select name="assunto" id="assunto">
+                <option value="duvidas">dúvidas</option>
+                <option value="suporte">suporte</option>
+                <option value="preços">preços</option>
+                <option value="contratação">contratação</option>
+                <option value="outros">outros</option>
+            </select>
+        </div>
+
+        <div class="linha">
+            <div class="coluna">
+                Mensagem:
+            </div>
+            <div class="center"><textarea name="mensagem" id="mensagem"
+                    placeholder="Digite sua mensagem aqui.."></textarea></div>
+        </div>
+
+        <div class="botao">
+            <input type="button" value="enviar" onclick="enviarDados()">
+            <input type="reset" value="limpar">
+        </div>
+    </div>
     <footer>
         Feito por: <div class="nomes">Henrique Navarro Morais</div> e <div class="nomes">Joao Pedro Xavier</div>
     </footer>

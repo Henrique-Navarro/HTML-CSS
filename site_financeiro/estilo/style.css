@@ -15,6 +15,15 @@ div#logo{
     margin: 35px 0px;
 }
 
+div#icone_imagem{
+    background-image: url(../imagens/logo.png);
+    width: 289px;
+    height: 59px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+}
+
 div#icone{
     background-color:#dddddd;
     width:130px;
@@ -85,6 +94,7 @@ div#dados{
 tr,th{
     background-color:rgba(128, 128, 128, 0.315);
     padding:7px;
+    text-align: center;
 }
   
 table,td{
@@ -103,4 +113,18 @@ tr#titulo{
 th:hover, td:hover{
     background-color: gray;
     color:white
+}
+
+td#icone1{
+    background-image: url(../imagens/lapis.png);
+}
+
+td#icone2{
+    background-image: url(../imagens/lixeira.png);
+}
+
+td#icone1, td#icone2{
+   background-size: contain;
+   background-repeat: no-repeat;
+   padding: 14px;
 }

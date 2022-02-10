@@ -11,18 +11,42 @@ a{
     color:black;
 }
 
-div#menu>ul{
+div#lupa{
+    background-image: url(../imagens/lupa.png);
+    background-size: 45px;
+    background-repeat: no-repeat;
+    margin: 7px 0px 0px 7px;
+}
+
+#pesquisa{
+   position: fixed;
+   top: 59px;
+   left: 0px;
+   border: 1px solid #DDDDDD;
+   border-top: none;
+   background-color: #27279b;
+   color: white;
+   border-radius: 3px;
+   padding: 10px;
+   display: none;
+}
+
+#icone_imagem{
+    margin: 0px 130px 0px 130px;
+}
+
+div#menu>ul, div#lupa, div#icone_imagem{
     list-style:nome;
     background-color: #dddddd;
     overflow: hidden;
 }
   
-div#menu>ul>li{
+div#menu>ul>li, div#lupa, div#icone_imagem{
     display:inline;
     float:left;
 }
 
-li a, .dropbtn{
+li a, .dropbtn, div#lupa{
     display:block;
     padding:20px;
     background-color: #dddddd;
@@ -66,4 +90,20 @@ footer{
 div.nomes{
     display: inline;
     background-color: rgb(13, 13, 110);;
+}
+
+h1{
+    text-align: center;
+    background-color: #DDDDDD;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+div#icone_imagem{
+    background-image: url(../imagens/logo.png);
+    width: 289px;
+    height: 59px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
 }

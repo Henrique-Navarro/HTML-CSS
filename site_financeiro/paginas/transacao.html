@@ -9,24 +9,36 @@
 
     <link rel="stylesheet" href="../estilo/menu.css">
     <link rel="stylesheet" href="../estilo/transacao.css">
+
+    <script>
+        function cadastroTranscao() {
+            window.alert('Transação Cadastrada com sucesso!')
+        }
+
+        function pesquisar() {
+            prompt('Buscar:');
+        }
+    </script>
 </head>
 
 <body>
     <div id="menu">
         <ul>
             <!--Hover quando passar em buscar aparece uma lupa-->
-            <li><a>buscar</a></li>
+            <div id="lupa" onclick="pesquisar()"></div>
+            <input type="text" id="pesquisa" placeholder="buscar">
             <li><a href="index.html">principal</a></li>
             <li><a href="contato.html">contato</a></li>
             <li><a href="sobre.html">sobre</a></li>
             <li class="dropdown">
                 <p class="dropbtn">conta</p>
                 <div class="conteudo-dropdown">
-                    <a href="">editar</a>
+                    <a href="editar.html">editar</a>
                     <a href="login.html">login</a>
                     <a href="cadastrar.html">cadastrar</a>
                 </div>
             </li>
+            <div id="icone_imagem"></div>
         </ul>
     </div>
 
@@ -45,8 +57,15 @@
             <button class="botaoOpcao" style="margin: 7% 0px 0px 25px;">
                 saida
             </button>
-            <button id="botaoEnviar">
-                enviar
+            <select name="categoria" id="categoria">
+                <option value="estudos">estudos</option>
+                <option value="casa">casa</option>
+                <option value="viagem">viagem</option>
+                <option value="compras">compras</option>
+                <option value="farmácia">farmácia</option>
+            </select>
+            <button id="botaoEnviar" onclick="cadastroTranscao()">
+                cadastrar
             </button>
         </div>
     </main>

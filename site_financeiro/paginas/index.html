@@ -9,13 +9,20 @@
 
     <link rel="stylesheet" href="../estilo/menu.css">
     <link rel="stylesheet" href="../estilo/style.css">
+
+    <script>
+        function pesquisar() {
+            prompt('Buscar:');
+        }
+    </script>
 </head>
 
 <body>
     <div id="menu">
         <ul>
             <!--Hover quando passar em buscar aparece uma lupa-->
-            <li><a>buscar</a></li>
+            <div id="lupa" onclick="pesquisar()"></div>
+            <input type="text" id="pesquisa" placeholder="buscar">
             <li><a href="index.html">principal</a></li>
             <li><a href="contato.html">contato</a></li>
             <li><a href="sobre.html">sobre</a></li>
@@ -27,16 +34,12 @@
                     <a href="cadastrar.html">cadastrar</a>
                 </div>
             </li>
+            <div id="icone_imagem"></div>
         </ul>
     </div>
 
     <header>
         <div id="logo">
-            <div id="icone">
-                <!--Criar logo-->
-                <img src="../imagens/pedrinha.png" style="width: 30px; height: 30px;" alt="">
-                Jooj's empresa
-            </div>
             <div id=botao>
                 <a href="transacao.html">+ nova transação</a>
             </div>
@@ -45,19 +48,19 @@
         <div id="box1">
             Entradas
             <br>
-            R$ 1.000,00
+            R$ 6.000,00
         </div>
 
         <div id="box2">
             Saidas
             <br>
-            R$ 3.000,00
+            - R$ 1.200,00
         </div>
 
         <div id="box3">
             Total
             <br>
-            R$ 3.000,00
+            R$ 4.800,00
         </div>
     </header>
 
@@ -77,24 +80,48 @@
                     <td>empresa A</td>
                     <td>1000</td>
                     <td>categoria A</td>
-                    <td>10/10/2021</td>
+                    <td>02/02/2022</td>
                     <td>20:10</td>
+                    <td id="icone1">
+                    </td>
+                    <td id="icone2">
+                    </td>
                 </tr>
 
                 <tr>
                     <td>empresa B</td>
                     <td>2000</td>
                     <td>categoria B</th>
-                    <td>20/20/2021</th>
+                    <td>01/12/2021</th>
                     <td>20:20</td>
+                    <td id="icone1">
+                    </td>
+                    <td id="icone2">
+                    </td>
                 </tr>
 
                 <tr>
                     <td>empresa C</td>
                     <td>3000</td>
                     <td>categoria c</th>
-                    <td>30/30/2021</th>
+                    <td>01/11/2021</th>
                     <td>20:30</td>
+                    <td id="icone1">
+                    </td>
+                    <td id="icone2">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>empresa D</td>
+                    <td>2000</td>
+                    <td>categoria D</th>
+                    <td>01/10/2021</th>
+                    <td>20:40</td>
+                    <td id="icone1">
+                    </td>
+                    <td id="icone2">
+                    </td>
                 </tr>
             </table>
         </div>

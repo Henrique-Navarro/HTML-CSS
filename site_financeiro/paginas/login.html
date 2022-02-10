@@ -11,29 +11,37 @@
     <link rel="stylesheet" href="../estilo/login.css">
 
     <script type="text/javascript" src="../javaScript/login.js"></script>
+
+    <script>
+        function pesquisar() {
+            prompt('Buscar:');
+        }
+    </script>
 </head>
 
 <body>
     <div id="menu">
         <ul>
             <!--Hover quando passar em buscar aparece uma lupa-->
-            <li><a>buscar</a></li>
+            <div id="lupa" onclick="pesquisar()"></div>
+            <input type="text" id="pesquisa" placeholder="buscar">
             <li><a href="index.html">principal</a></li>
             <li><a href="contato.html">contato</a></li>
             <li><a href="sobre.html">sobre</a></li>
             <li class="dropdown">
                 <p class="dropbtn">conta</p>
                 <div class="conteudo-dropdown">
-                    <a href="">editar</a>
+                    <a href="editar.html">editar</a>
                     <a href="login.html">login</a>
                     <a href="cadastrar.html">cadastrar</a>
                 </div>
             </li>
+            <div id="icone_imagem"></div>
         </ul>
-    </div>
     </div>
 
     <div class="container">
+        <h1>Login:</h1>
         <div class="linha">
             <div class="coluna">
                 Nome:
@@ -57,6 +65,10 @@
             <a href="cadastrar.html">cadastrar</a>
         </div>
     </div>
+
+    <footer>
+        Feito por: <div class="nomes">Henrique Navarro Morais</div> e <div class="nomes">Joao Pedro Xavier</div>
+    </footer>
 </body>
 
 </html>
