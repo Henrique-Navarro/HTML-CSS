@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+	$x=5;
+    $y=10;
+    
+    function somar(){
+    	$GLOBALS['y']= $GLOBALS['x'] + $GLOBALS['y'];
+    }
+    
+    somar();
+    echo $y;
+?>
+
+</body>
+</html>
