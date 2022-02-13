@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+class car{
+	public $color;
+    public $model;
+    
+    //função construtora __
+    public function __construct($color, $model){
+    	$this->color=$color;
+        $this->model=$model;
+    }
+    
+    public function mensagem(){
+    	return "Meu carro é " .$this->model. " " .$this->color. "! <br>";
+    }
+}
+
+$myCar= new Car("azul", "cedan");
+echo $myCar -> mensagem();
+$myCar= new Car("vermei", "loco");
+echo $myCar -> mensagem();
+?>
+
+</body>
+</html>
