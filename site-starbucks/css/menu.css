@@ -2,27 +2,41 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.center{
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
+/**menu**/
+header{
+    margin: 2% 5% 0 5%;
+}
+
+#logo{
+    background-image: url(../imagem/logo.png);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
 
 #menu{
-    width: 100%;
-    list-style: none;
-    text-align: right;
+    float: right;
+    margin-top: 3%;
 }
 
-#menu ul li{
+ul a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+li{
     display: inline;
-    padding: 2px 20px;
 }
 
-ul{
-    margin-top: 40px;
-    margin-right: 40px;
+li:hover a{
+    background-color: #017143;
+    color: white;
 }

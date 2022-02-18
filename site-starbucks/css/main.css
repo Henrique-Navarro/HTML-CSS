@@ -1,0 +1,122 @@
+/**conteudo**/
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+main{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    margin: 3% 5% 0px 5%;
+}
+
+#conteudo{
+    display: flex;
+    width: 93%;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    height: 450px;
+}
+
+#text{
+    position: relative;
+    width: 50%;
+    color: #313131;
+}
+#text h1{
+    font-size: 55px;
+}
+#text p{
+    margin-top: 2%;
+}
+#text span{
+    color: #017143;
+    font-size: 70px;
+    letter-spacing: 4px;
+}
+
+button{
+    background-color: #017143;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 20px;
+    font-size: 17px;
+    margin-top: 5%;
+    border: none;
+}
+
+button:hover{
+    color: black;
+    background-color: #0ea566;
+}
+
+#image{
+    background-image: url(../imagem/img1.png);
+    width: 330px;
+    height: 430px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: end;
+}
+
+nav{
+   background-color: #017143;
+}
+
+.facebook{
+    background-image: url(/imagem/facebook.png);
+}
+.twitter{
+    background-image: url(/imagem/twitter.png);
+}
+.instagram{
+    background-image: url(/imagem/instagram.png);
+}
+
+.logo{
+    width: 41px;
+    height: 41px;
+    background-repeat: no-repeat;
+    margin: 20px 0px 20px 0px;
+    background-color: #017143;
+}
+
+#bola{
+    width: 1200px;
+    height: 1200px;
+    background-color: #017143;
+    border-radius: 100%;
+    position: absolute;
+    top: 25%;
+    left: 60%;
+    z-index: 1;
+}
+
+#thumb{
+    display: float;
+    margin: auto;
+    width: 350px;
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 175px);
+}
+
+.thumb{
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.sorvete1{
+    background-image: url(../imagem/thumb1.png);
+}
+.sorvete2{
+    background-image: url(../imagem/thumb2.png);
+}
+.sorvete3{
+    background-image: url(../imagem/thumb3.png);
+}
