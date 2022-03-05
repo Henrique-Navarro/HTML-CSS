@@ -1,0 +1,32 @@
+[reset.css]
+[2 classes, classe geral, classe modificadora]
+
+//ganha o comportamento de uma palavra (texto)
+//perde altura e largura
+//text-align:center
+display: inline;
+
+//aceita %
+//o elemento ocupa a linha toda
+//margin: auto
+//definir largura e altura
+display: block;
+
+//text-align no container cujo os elementos estão
+//text-align:center
+//funciona com todas as linhas com excessão da ultima
+//text-align: justify
+//2 modos de arrumar (criar um item vazio HTML) (estilizar com CSS usando content:'';)
+display: inline-block
+
+//'flutua' o elemento, elemento vai para frente
+//esconde outros elementos, mas não esconde o conteudo
+display: float;
+
+//calcula o tamanho considerando os elemento que estão flutuando
+overflow: hidden;
+
+//se tiver algum elemento flutuando na direção [direita/esquerdo], clear deixa o elemento embaixo do flutuante
+clear: left/right/both(esquerda e direita)
+
+position:

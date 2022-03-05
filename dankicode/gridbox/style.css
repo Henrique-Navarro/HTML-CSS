@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header{
+    background-color: rgb(106, 102, 102);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+a{
+    color: white;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
