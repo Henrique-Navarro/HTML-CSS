@@ -1,0 +1,39 @@
+*{
+    margin :0;
+    padding:0;
+    box-sizing:border-box;
+    text-align:center;
+  }
+  
+  .container{
+    background:black;
+    display:grid;
+    grid-template-columns: 3fr 200px;
+    grid-template-rows:20vh 70vh 10vh;
+    
+    /*linha x coluna*/
+    grid-template-areas:
+      "header header"
+      "main aside"
+      "footer footer"
+  }
+  
+  header{
+    background:yellow;
+    grid-area:header;
+  }
+  
+  main{
+    background:blue;
+    grid-area:main;
+  }
+  
+  aside{
+    background:green;
+    grid-area:aside;
+  }
+  
+  footer{
+    background:red;
+    grid-area:footer;
+  }
