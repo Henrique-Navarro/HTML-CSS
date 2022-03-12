@@ -21,7 +21,7 @@ header{
     background-color: #212343;
 }
 header img{
-    padding: 1.7%;
+    padding: 10px;
 }
 
 /*conteudo*/
@@ -41,22 +41,23 @@ main > .center{
 form{
     background-color: white;
     border: 8px solid rgb(167, 165, 165, 0.8);
-    height: calc(100% + 30px);
-    width: 400px;
-    position: relative;
-    float: right;
-    top: -15px;
     text-align: center;
     padding: 15px;
     color:rgb(167, 165, 165, 0.8);
+    height: calc(100% + 5%);
+    width: 35%;
+
+    position: relative;
+    float: right;
+    top: -15px;
 }
 input{
     padding: 10px;
     width: 100%;
 }
 
-form>p:nth-child(1){margin-top: 25px;text-align: center;}
-.input-line, form>p:nth-child(5){margin-top: 30px;}
+form>p:nth-child(1){margin-top: 5%;text-align: center;}
+.input-line, form>p:nth-child(5){margin-top: 8%;}
 .input-line>p, form>p{text-align: left;}
 
 input[type="submit"]{
@@ -66,7 +67,30 @@ input[type="submit"]{
     color: white;
 }
 
-/*box texto*/
+@media(max-width:1000px){
+    form{
+        display: inline-block;
+        width: 70%;
+        height: auto;
+        float: none;
+        padding: 10%;
+    }
+    form>p:nth-child(1){margin-top: 0;}
+    .input-line, form>p:nth-child(5){margin-top: 5%;}
+    input, input[type="submit"]{
+        padding: 5px;
+    }
+    .text-list{
+        display: inline-block;
+        width: 70%;
+        padding: 0px;
+        margin: auto;
+        height: auto;
+        float: none;
+    }
+}
+
+/*box text1*/
 .text-list{
     padding: 20px;
     float: left;
@@ -86,6 +110,7 @@ input[type="submit"]{
     padding: 5px;
 }
 
+/*box text2*/
 .text-container{
     padding: 40px;
     color: rgb(160, 134, 134);
